@@ -69,3 +69,5 @@ tblproperties("skip.header.line.count"="1")
 
  #2> select year_id, sum(sales) as Total_sales from sales_order_data_csv_v1 group by year_id;
    to get total sales per year.
+   
+ 
