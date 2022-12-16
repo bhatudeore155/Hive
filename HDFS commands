@@ -1,0 +1,34 @@
+# mkdir - for making directory in HDFS
+  - hadoop fs -mkdir /path
+  
+# copyFromLocal - for copying file or dirt from local to HDFS
+  - hadoop fs -copyFromLocal /localsrc /hdfsdst
+  OR
+  # put - for copying file or dirt from local to HDFS
+  -hadoop fs -put /localsrc /hdfsdst
+  
+# copyToLocal - for copying file or dirt from hdfs to local
+  - hadoop fs -copyToLocal /hdfssrc /localdst
+  OR
+  # get - for copying file or dirt from HDFS to local
+  - hadoop fs -get /HDFSsrc /localdst
+  
+# MV- for move file within HDFS
+  -hadoop fs -mv /user/hive/warehouse/sales_order_data_orc /user/hive/warehouse/hive_class2.db
+  
+# CP - for copy file within HDFS
+  - hadoop fs -cp /user/hive/warehouse/sales_order_data_orc /user/hive/warehouse/hive_class2.db
+  
+# getmerge - for retrieves all files that match src in hdfs and copy them to local in a single merged file
+  -hadoop fs -getmerge /HDFS src /local DST
+  
+# cat - for displaying the contents of file
+  - hadoop fs -cat /filename or path
+  
+# touchz - for creating file at given path if not exist with size of 0
+  -hadoop fs -touchz /path
+  
+# test - to check path is exist or not 
+  - hadoop fs -test /path
+  
+# 
