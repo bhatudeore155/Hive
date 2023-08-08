@@ -26,7 +26,7 @@
   - hadoop fs -cat /filename or path
   
 # touchz - for creating file at given path if not exist with size of 0
-  -hadoop fs -touchz /path
+  -hadoop fs -touchz /path  
   
 # test - to check path is exist or not 
   - hadoop fs -test /path
